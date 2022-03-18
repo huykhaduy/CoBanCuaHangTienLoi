@@ -16,7 +16,7 @@ public class DButton extends JButton {
     private Color borderColor;
     private Color hoverColor;
     private Color clickColor;
-    private int radius = 50;
+    private int radius = 35;
 
     public DButton() {
         initialize();
@@ -134,6 +134,13 @@ public class DButton extends JButton {
 
     public void setButtonSize(int width, int height) {
         setPreferredSize(new Dimension(width, height));
+    }
+
+    public void setPadding(int paddingY, int paddingX) {
+        setPreferredSize(new Dimension(paddingY + this.getHeight(), paddingX + this.getWidth()));
+        int a = paddingX + this.getWidth();
+        int b = paddingY + this.getHeight();
+        System.out.println("paddingX: " + a + " paddingY: " + b);
     }
 
     @Override 
