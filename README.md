@@ -19,4 +19,4 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 ## Một số hình ảnh về chương trình
 
-<img src="./picture/demo.png" style = "width:500px; height: 500px">
+<img src="./picture/demo.png" style = "width:800px; height: 500px">
