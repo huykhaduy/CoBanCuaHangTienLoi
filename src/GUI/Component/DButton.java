@@ -36,20 +36,20 @@ public class DButton extends JButton {
             public void mouseEntered(MouseEvent e) {
                 isOver = true;
                 setBackground(hoverColor);
-                repaint();
+                revalidate();
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
                 isOver = false;
                 setBackground(colorBg);
-                repaint();
+                revalidate();
             }
 
             @Override
             public void mousePressed(MouseEvent e) {
                 setBackground(clickColor);
-                repaint();
+                revalidate();
             }
 
             @Override
@@ -59,7 +59,7 @@ public class DButton extends JButton {
                 } else {
                     setBackground(colorBg);
                 }
-                repaint();
+                revalidate();
             }
         });
     }
@@ -75,7 +75,7 @@ public class DButton extends JButton {
 
     public void setIsOver(boolean isOver) {
         this.isOver = isOver;
-        repaint();
+        revalidate();
     }
 
     public Color getColorBg() {
@@ -93,7 +93,7 @@ public class DButton extends JButton {
 
     public void setBorderColor(Color borderColor) {
         this.borderColor = borderColor;
-        repaint();
+        revalidate();
     }
 
     public Color getHoverColor() {
@@ -102,7 +102,7 @@ public class DButton extends JButton {
 
     public void setHoverColor(Color hoverColor) {
         this.hoverColor = hoverColor;
-        repaint();
+        revalidate();
     }
 
     public Color getClickColor() {
@@ -111,7 +111,7 @@ public class DButton extends JButton {
 
     public void setClickColor(Color clickColor) {
         this.clickColor = clickColor;
-        repaint();
+        revalidate();
     }
 
     public int getRadius() {
@@ -120,7 +120,7 @@ public class DButton extends JButton {
 
     public void setRadius(int radius) {
         this.radius = radius;
-        repaint();
+        revalidate();
     }
 
     public boolean isIsHideBorder() {
@@ -129,7 +129,7 @@ public class DButton extends JButton {
 
     public void setIsHideBorder(boolean isHideBorder) {
         this.isHideBorder = isHideBorder;
-        repaint();
+        revalidate();
     }
 
     public void setButtonSize(int width, int height) {
