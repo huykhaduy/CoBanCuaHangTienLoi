@@ -220,7 +220,7 @@ class ChangeStateEvent implements ItemListener {
                 }
             }
         }
-        // System.out.println("Component count: " + des.getComponentCount());
+        System.out.println("Component count: " + des.getComponentCount());
     }
 
 }
