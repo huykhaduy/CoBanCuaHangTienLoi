@@ -6,7 +6,7 @@ import GUI.MainForm;
 public class App {
     public static void main(String[] args) throws Exception {
         new MainForm().setVisible(true);
-
+        //Hello form duy cute
         //Write your code here
         //Show some thing great
         //JFrame frame = new JFrame("Hello World");
