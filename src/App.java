@@ -7,7 +7,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         new MainForm().setVisible(true);
         //Hello form duy cute
-       
+        
+        //Sometime we need to change
 
     }
 }
